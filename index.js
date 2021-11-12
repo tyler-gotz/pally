@@ -16,7 +16,7 @@ app.get('/api/test', async (req, res) => {
         const results = await pa11y(url)
         res.json(results)
     } catch (error) {
-        res.status(400).json({ error: 'Unable to get results'})
+        res.status(400).json({ error })
     }
 })
 
